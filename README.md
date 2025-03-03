@@ -49,19 +49,19 @@ docker run -it --rm calc_app
 📌 Available Commands
 🔹 Basic Commands
 Command	Example	Result
-add	add 5 10	15
-subtract	subtract 20 5	15
+add	||
+subtract
 
 🔹 Plugin Commands
 Command	Example	Result
-power	power 2 3	8
-square	square 4	16
+power ||
+square
 
 🔹 Utility Commands
 Command	Description
-menu	Show available commands
-history	Show last 10 commands
-exit	Quit the program
+menu	||
+history	||
+exit	
 
 
 📌 Running Tests
