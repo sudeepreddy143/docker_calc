@@ -1,0 +1,23 @@
+version: "3.8"
+
+services:
+  app:
+    build: .
+    container_name: calc_app
+    depends_on:
+      - db
+    volumes:
+      - .:/app
+    environment:
+      - DATABASE_URL=sqlite:///commands.db
+    command: ["python", "app/main.py"]
+
+  db:
+    image: postgres:14
+    container_name: calc_db
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: commands_db
+    ports:
+      - "5432:5432"
