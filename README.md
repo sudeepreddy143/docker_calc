@@ -56,7 +56,7 @@ subtract
 Command	Example	Result
 power ||
 square ||
-Can add more plugins will load dynamically for example multiply and divide and so on can extend ...
+Can add more plugins will load dynamically for example multiply and divide and so on can extended ...
 
 🔹 Utility Commands
 Command	Description
